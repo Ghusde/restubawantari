@@ -1,0 +1,41 @@
+TARUH FILE MUSIK DI FOLDER INI
+==============================
+
+1. Copy file lagumu ke folder ini (folder "music").
+
+2. Ganti namanya jadi:   lagu.mp3
+
+   Kalau formatnya bukan mp3, boleh juga: lagu.m4a / lagu.ogg / lagu.wav
+   Tapi kalau begitu, bukan cuma nama filenya yang diganti — buka index.html,
+   cari baris:
+
+       music: "music/lagu.mp3",
+
+   lalu sesuaikan jadi misalnya "music/lagu.m4a".
+
+3. Buka index.html, klik "PUTAR DENGAN MUSIK". Selesai.
+
+
+CATATAN
+-------
+- Kalau file-nya tidak ketemu atau formatnya tidak didukung browser,
+  slideshow otomatis balik pakai musik sintesis bawaan — jadi tidak
+  pernah hening total.
+
+- Atur volume dan lama fade-in di index.html, di blok CONFIG:
+
+       musicVol: 0.85,        <- 0 sampai 1
+       musicFadeSec: 3,       <- lama musik naik pelan-pelan, dalam detik
+
+- Lagunya otomatis diulang (loop) selama slideshow berjalan.
+
+- Tombol speaker di pojok bawah dan tombol M di keyboard tetap berfungsi
+  untuk mute/unmute. Spasi untuk jeda — musiknya ikut berhenti.
+
+- PENTING: kalau file HTML-nya mau dikirim ke orang lain (WA, flashdisk),
+  folder "music" ini harus ikut dikirim bareng index.html. Kalau mau
+  benar-benar satu file saja, bilang ke Claude — lagunya bisa ditanam
+  langsung ke dalam index.html seperti foto-fotonya.
+
+- Untuk diputar di TV/laptop saat acara, taruh index.html dan folder
+  music (juga folder images kalau ada) dalam satu folder yang sama.
